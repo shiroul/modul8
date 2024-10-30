@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="#" name="form">
+        <label for="Ename">Employee Name :</label><br>
+        <input type="text" id="Ename" name="Ename"><br>
+        <label for="nip">NIP : </label><br>
+        <input type="text" id="nip" name="nip"><br>
+        <label for="order">Order : </label><br>
+        <select id="order">
+            <option value="choco">Choco Pasta</option>
+            <option value="hazel">Hazelnut Powder</option>
+            <option value="banana">Banana</option>
+        </select>
+        <label for="qty">Quantity</label>
+        <input type="text" id="qty" name="qty"><br>
+        <button type="button" onclick="checkBlankForm(document.getElementById('Ename').value,
+                                        document.getElementById('nip').value,
+                                        document.getElementById('order').value,
+                                        document.getElementById('qty').value)">SUBMIT</button>
+    </form>
+</body>
+</html>
